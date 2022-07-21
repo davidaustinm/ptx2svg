@@ -1,0 +1,19 @@
+<svgfigure xml:id="figure-svg" width="300" height="300" margin="5">
+  <coordinates mbox="[-4,-4,4,4]"/>
+
+  <grid rx="[-4,1,4]" ry="[-4,1,4]" />
+
+  <axes hticks="[-4,1,4]" vticks="[-4,1,4]" />
+
+  <function xml:id="figure-function" text="0.5*(x^3 - x) + 1"/>
+  
+  <graph function="0.5*(x**3 - x) + 1" color="#00f" width="2" />
+  
+  <line p1="[0,0]" p2="[2,2]" color="#f00" width="2" />
+
+  <point p="[1,1]" size="3" fill="#f00" color="#000" width="2"/>
+  
+  <label x="100" y="100" alignment="northwest"><m>(x_0, y_0)</m></label>
+
+</svgfigure>
+

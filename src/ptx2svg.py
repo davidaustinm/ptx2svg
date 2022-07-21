@@ -1,6 +1,8 @@
 from math import *
 from lxml import etree
 
+id_num = 0
+
 newline = '\n'
 ctm = [[1, 0, 0], [0, 1, 0]]
 ctmstack = [ctm]
@@ -44,6 +46,11 @@ def rotate(theta):
     m = [[c, -s, 0], [s, c, 0]]
     ctm = concat(ctm, m)
 
+def add_id(element):
+    global id_num
+    element.set('id', 'element-'+str(id_num))
+    id_num += 1
+
 def beginfigure(element):
     global root, bbox
     width = eval(element.get('width'))
@@ -53,6 +60,7 @@ def beginfigure(element):
     w = width + 2*margin
     h = height + 2*margin
     root = etree.Element("svg", width=str(w), height=str(h))
+    add_id(root)
 
     translate(0, height+2*margin)
     scale(1,-1)
@@ -76,6 +84,7 @@ def drawline(p0, p1, color, width=1, user_coords=True):
 
 def mk_line(p0, p1, user_coords = True):
     line = etree.Element('line')
+    add_id(line)
     if user_coords:
         p0 = transform(p0)
         p1 = transform(p1)
@@ -130,6 +139,7 @@ class Grid():
         ry = self.ry
         x = rx[0]
         grid = etree.Element('g')
+        add_id(grid)
         attr = {'stroke': self.color,
                 'stroke-width': self.width}
         add_attr(grid, attr)
@@ -151,14 +161,17 @@ class Axes():
 
     def draw(self):
         axes = etree.Element('g')
+        add_id(axes)
         root.append(axes)
         axes.set('stroke', self.color)
         axes.append(mk_line((bbox[0], 0), (bbox[2], 0)))
         axes.append(mk_line((0, bbox[1]), (0, bbox[3])))
 
         hticks = etree.Element('g')
+        add_id(hticks)
         axes.append(hticks)
         vticks = etree.Element('g')
+        add_id(vticks)
         axes.append(vticks)
 
         if self.hticks != "none":
@@ -202,6 +215,7 @@ class Graph():
             x += dx
 
         path = etree.Element('path')
+        add_id(path)
         root.append(path)
         path.set('d', cmd)
         path.set('fill', 'none')
@@ -221,6 +235,7 @@ class Circle():
         center, right, top = map(transform, [center, right, top])
 
         circle = etree.Element('ellipse')
+        add_id(circle)
         root.append(circle)
         circle.set('cx', str(center[0]))
         circle.set('cy', str(center[1]))
@@ -254,5 +269,6 @@ class Point():
                 'r':element.get('size')
         }
         circle = etree.Element('circle')
+        add_id(circle)
         root.append(circle)
         add_attr(circle, attr)

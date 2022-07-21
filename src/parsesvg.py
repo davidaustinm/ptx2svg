@@ -33,10 +33,8 @@ def parse(figure, count):
 
     index = filename.rfind('/')
     if index >= 0:
-        print(index, filename)
         filename = filename[index+1:]
     output = 'output/' + filename[:-4] + '.html'
-    print(output)
     endfigure(output)
 
 for element in tree.iter(tag='svgfigure'):

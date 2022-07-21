@@ -1,0 +1,76 @@
+<diagram>
+  <annotations>
+    <annotation speech2="The cubic curve" speech="x cube minus x plus 1">
+      <active>element-43</active>
+      <position>1</position>
+      <parents>
+        <active>element-0</active>
+      </parents>
+      <sonification>
+        <active>element-43</active>
+      </sonification>
+    </annotation>
+    <annotation speech2="An arbitrary path" speech="same here">
+      <active>element-101</active>
+      <position>3</position>
+      <parents>
+        <active>element-0</active>
+      </parents>
+      <sonification>
+        <active measure="all">element-101</active>
+      </sonification>
+    </annotation>
+    <annotation speech2="x axis"  speech="x axis from -5 to 5">
+      <active>element-1</active>
+      <position>2</position>
+      <parents>
+        <grouped>element-0</grouped>
+      </parents>
+      <children>
+      </children>
+      <component>
+        <passive>element-2</passive>
+        <passive>element-3</passive>
+        <passive>element-4</passive>
+      </component>
+    </annotation>
+    <annotation speech="The whole graph">
+      <grouped>element-0</grouped>
+      <position>1</position>
+      <children>
+        <active>element-1</active>
+        <active>element-43</active>
+        <active>element-101</active>
+      </children>
+      <component>
+        <active>element-1</active>
+        <passive>element-2</passive>
+        <passive>element-3</passive>
+        <passive>element-4</passive>
+        <active>element-43</active>
+        <active>element-101</active>
+      </component>
+    </annotation>
+    <annotation>
+      <passive>element-2</passive>
+      <position>0</position>
+      <parents>
+        <active>element-1</active>
+      </parents>
+    </annotation>
+    <annotation>
+      <passive>element-3</passive>
+      <position>0</position>
+      <parents>
+        <active>element-1</active>
+      </parents>
+    </annotation>
+    <annotation>
+      <passive>element-4</passive>
+      <position>0</position>
+      <parents>
+        <active>element-1</active>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

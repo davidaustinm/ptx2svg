@@ -1,0 +1,145 @@
+<diagram>
+  <annotations>
+    <annotation speech="Eight equally spaced points on the circle, 45 degrees apart, starting at 1 on the x-axis">
+      <grouped>circle</grouped>
+      <position>1</position>
+      <children>
+        <grouped>group1</grouped>
+        <grouped>group4</grouped>
+      </children>
+      <component>
+        <active>group-2</active>
+        <active>group-3</active>
+        <passive>group-4</passive>
+        <active>group-6</active>
+        <active>group-7</active>
+        <active>group-8</active>
+        <active>group-9</active>
+        <active>group-10</active>
+        <active>group-11</active>
+        <active>group-12</active>
+        <active>group-13</active>
+      </component>
+    </annotation>
+    <annotation speech="Unit circle">
+      <passive>group-4</passive>
+      <position>0</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="A pair of perpendicular axes for Cartesian coordinates">
+      <grouped>group1</grouped>
+      <position>1</position>
+      <parents>
+        <grouped>circle</grouped>
+      </parents>
+      <children>
+        <active>group-2</active>
+        <active>group-3</active>
+      </children>
+      <component>
+        <active>group-2</active>
+        <active>group-3</active>
+      </component>
+    </annotation>
+    <annotation speech="A horizontal x-axis">
+      <active>group-2</active>
+      <position>1</position>
+      <parents>
+        <grouped>group1</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="A vertical y-axis">
+      <active>group-3</active>
+      <position>2</position>
+      <parents>
+        <grouped>group1</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="A circle of radius 1, centered at the origin">
+      <grouped>group4</grouped>
+      <position>2</position>
+      <parents>
+        <grouped>circle</grouped>
+      </parents>
+      <children>
+        <active>group-6</active>
+        <active>group-7</active>
+        <active>group-8</active>
+        <active>group-9</active>
+        <active>group-10</active>
+        <active>group-11</active>
+        <active>group-12</active>
+        <active>group-13</active>
+      </children>
+      <component>
+        <passive>group-4</passive>
+        <active>group-6</active>
+        <active>group-7</active>
+        <active>group-8</active>
+        <active>group-9</active>
+        <active>group-10</active>
+        <active>group-11</active>
+        <active>group-12</active>
+        <active>group-13</active>
+      </component>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity to the power zero">
+      <active>group-6</active>
+      <position>1</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity">
+      <active>group-7</active>
+      <position>2</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity squared">
+      <active>group-8</active>
+      <position>3</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity cubed">
+      <active>group-9</active>
+      <position>4</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity to the fourth">
+      <active>group-10</active>
+      <position>5</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity to the fifth">
+      <active>group-11</active>
+      <position>6</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity to the sixth">
+      <active>group-12</active>
+      <position>7</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+    <annotation speech="The primitive eighth root of unity to the seventh">
+      <active>group-13</active>
+      <position>8</position>
+      <parents>
+        <grouped>group4</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

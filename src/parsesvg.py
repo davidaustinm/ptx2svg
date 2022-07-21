@@ -30,8 +30,7 @@ def parse(figure, count):
         if graphic != None:
             graphic(element).draw()
 
-    index = filename.rfind('/')
-    output = filename[:index] + '/output/' + filename[index+1:-4] + '.html'
+    output = 'output/' + filename[:-4] + '.html'
     endfigure(output)
 
 for element in tree.iter(tag='svgfigure'):
